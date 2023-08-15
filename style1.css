@@ -1,0 +1,123 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: green;
+}
+
+.small-text {
+  font-size: 12px;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+.separator_g {
+    border-left: 1.5px solid green;
+    height: 40px; /* Adjust the height as needed */
+    margin: -8px 20px; /* Adjust the margin as needed */
+}
+
+.separator_w {
+    border-left: 1.5px solid white;
+    height: 40px; /* Adjust the height as needed */
+    margin: -8px 20px; /* Adjust the margin as needed */
+}
+
+
+/* Add new style for the book table */
+.book-table {
+  width: 95%;
+  margin: 15px auto;
+  border-collapse: collapse;
+  table-layout: auto;
+  position: relative;
+  border: 2px solid green;
+}
+
+.book-table th,
+.book-table td {
+    border: 2px solid green;
+    padding: 10px;
+    color: white;
+    text-align: left;
+    white-space: nowrap;
+    position: relative;
+}
+
+.book-table th {
+    text-align: center;
+}
+
+
+.panel {
+    display: none;
+    position: absolute;
+    width: 100%; /* Initially, set the width to match table width */
+    background-color: black; /* Adjust the background color */
+    padding: 0px; /* Add some padding for better readability */
+    color: white; /* Adjust the text color */
+    top: calc(100% + 0px); /* Position the panel with a gap from the button */
+    left: 0;
+    z-index: 1; /* Ensure the panel is on top of other cells */
+}
+
+.accordion {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 2s ease;
+}
+
+.accordion:hover {
+    background-color: #000; /* Adjust the hover background color */
+}
+
+.active {
+    display: block;
+    border: none;
+    width: 100%;
+    border:none;
+}
+
+.expanded-row {
+    display: none;
+    background-color: black;
+    border: none;
+    color: white;
+}
+
+.expanded-row.active {
+    display: table-row; /* Change the display to table-row */
+}
+
+
+h1.Books_Register {
+    font-family: "Courier New", monospace;
+}
+
+#network {
+  width: 100%;
+  height: 480px;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+} 
